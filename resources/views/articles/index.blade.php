@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Articles</h1>
-    <a href="{{ route('articles.create') }}" class="btn btn-primary">Create New Article</a>
+    <a href="{{ route('articles.create') }}" class="btn btn-primary">Buat Artikel Baru</a>
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -27,7 +27,7 @@
                     <form action="{{ route('articles.destroy', $article->id) }}" method="POST" style="display:inline">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah kamu yakin?')">Hapus</button>
                     </form>
                 </td>
             </tr>

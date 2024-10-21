@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Edit Article</h1>
+    <h1>Edit Artikel</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -24,7 +24,7 @@
             <label for="content">Content:</label>
             <textarea class="form-control" id="content" name="content" rows="4" required>{{ $article->content }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">perbarui</button>
         <a href="{{ route('articles.index') }}" class="btn btn-secondary">Cancel</a>
     </form>
 @endsection
